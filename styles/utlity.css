@@ -1,0 +1,30 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ html{
+    font-size: 62.5%;
+ }
+ .d-flex{
+    display: flex;
+ }
+ .text-center{
+      text-align: center;
+ }
+ .bg-red{
+    background-color: #ff0000;
+ }
+ .bg-white{
+    background-color: #ffffff;
+ }
+ .bg-green{
+    background-color: #008000;
+ }
+ body{
+    background-color: #000000;
+    color: #ffffff;
+ }
+:root{
+    --
+}
