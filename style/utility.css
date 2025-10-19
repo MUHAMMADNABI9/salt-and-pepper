@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: apercu;
+    src: url(./fonts/apercu.otf);
+
+}
+@font-face{
+    font-family: apercu-bold;
+    src: url(./fonts/Apercu\ bold.otf);
+}
+@font-face {
+    font-family: apercu-medium;
+    src: url(./fonts/Apercu\ medium.otf);
+}
+
+.text-none{
+    text-decoration: none;
+    color: var(--white);
+}
+
+:root{
+    --black: #000000;
+    --red: #ed1c24;
+    --white: #fefefe;
+    --green: #28a745;
+    --light: apercu;
+    --bold: apercu-bold;
+    --medium:apercu-medium;
+
+}
+html{
+    font-size: 62.5%;
+    font-family: var(--medium);
+}
+
+body{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.d-flex{
+    display: flex;
+}
+
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-evenly{
+    justify-content: space-evenly;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.text-center{
+    text-align: center;
+}
+
+.item-center{
+    align-items: center;
+}
+/*.justify-between{
+    align-items: center;
+}
+
+.justify.evenly{
+    align-items: center;
+}
+.justify{
+    align-items: center;
+}*/
+
+
+
+
+.text-center{
+    text-align: center;
+}
+
+
+
+
+.bg-red{
+    background-color: var(--red);
+}
+
+
+.m-1{
+    margin: 5px;
+}
+.m-2{
+    margin: 10px;
+}
+.m-3{
+    margin: 15px;
+}
+.m-4{
+    margin: 20px;
+}
+.m-5{
+    margin: 25px;
+}
+
+/*margin top*/
+
+.mt-1{
+  margin:5px 0px 0px 0px;
+}
+.mt-2{
+    margin:10px 0px 0px 0px;
+}
+.mt-3{
+    margin:15px 0px 0px 0px;
+}
+.mt-4{
+   margin:20px 0px 0px 0px;
+}
+.mt-5{
+    margin:25px 0px 0px 0px;
+}
+
+
+/*margin bottom*/
+
+.mt-1{
+  margin:0px 5px 0px 0px;
+}
+.mt-2{
+    margin:0px 10px 0px 0px;
+}
+.mt-3{
+    margin:0px 15px 0px 0px;
+}
+.mt-4{
+   margin:0px 20px 0px 0px
+}
+.mt-5{
+    margin:0px 25px 0px 0px;
+}
+
+
+/* riunded*/
+.rounded{
+    border-radius: 8px;
+}
+.rounded-1{
+    border-radius: 20px;
+}
+.rounded-3{
+    border-radius: 30px;
+}
+
+/*paddind*/
+.p-1{
+    padding: 5px 0px;
+}
+.p-2{
+    padding: 10px 0px;
+}
+.pl-1{
+    padding: 0px 5px;
+}
+.pl-2{
+    padding: 0px 10px;
+}
+
+/*gap*/
+
+.gap-1{
+    gap: 5px;
+}
+
+.gap-2{
+    gap:10px;
+}
+.gap-3{
+    gap: 15px;
+}
+.gap-4{
+    gap: 20px;
+}
+
+
