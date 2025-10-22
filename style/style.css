@@ -1,4 +1,5 @@
 /*nav started*/
+/*
 .logo-image{
     width: 165px;
     margin: 19px;
@@ -32,4 +33,229 @@ font-size: 2rem;
 }
 .arrow-icon{
     font-size: 1.5rem;
+}*/
+
+/* logo*/
+
+@font-face {
+    font-family: futurak;
+    src: url(../fonts/futurablack-bt.ttf);
+
+}
+
+.futurak {
+  font-family: 'Futurak', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+.img{
+  width: 165px;
+  margin: 20px;    
+}
+
+.slideshow img{
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+}
+.slideshow img{
+    width: 100%;
+    height: 60px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opcisty 1s ease;
+}
+.slideshow img.active{
+    opacity: 1;
+}
+
+
+/*main secttion*/
+.main{
+    padding: 50px 20px;
+}
+
+.main h1{
+    font-size: 2rem;
+    margin-bottom:10px;
+}
+
+,main h1 span{
+    color: #fff;
+    font-weight: bold;
+}
+.main p{
+    color: #bbb;
+    margin-bottom: 40px;
+}
+
+/* brand container*/
+.brand-container{
+    flex-wrap: wrap;
+}
+.brand-card:hover{
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    padding: 20px;
+    width: 220px;
+    transition: transform 0.3 ease;
+}
+.brand-card:hover{
+    transform: scale(1.05);
+}
+.brand-card img{
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.footer p{
+    color: #aaa;
+    font-size: 14px;
+}
+
+/*navbar*/
+.navbar{
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: transparent;
+}
+.logo img{
+    height: 48px;
+    width: auro;
+    display: block;
+}
+
+/*mobile nav*/
+.nav-tongle{
+    background-color: transparent;
+    border: none;
+    display: line-block;
+    font-size: 1.6rem;
+    crusor:pointer
+}
+.nav-links{
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: #111;
+    display: none;
+    padding: 1rem;
+    box-shadow: 0 8px 24px #1111 ;
+    z-index: 50;
+}
+.nav-links.open{
+    display: block;
+}
+.nav-links ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+.nav-links a{
+    color: #fff;
+    text-decoration: none;
+    padding: .4rem .6rem;
+    display: inline-block;
+}
+/*action button*/
+,nav-action .btn{
+    padding: .5rem .9rem;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/*logo container: stack logo + slider */
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* slider under logo */
+.logo-slider {
+  width: 240px;             /* adjust width as needed */
+  height: 120px;            /* adjust height as needed */
+  overflow: hidden;
+  margin-top: .6rem;
+  border-radius: 8px;
+  background: #111;         /* fallback bg while images load */
+  box-shadow: 0 6px 18px rgba(0,0,0,.25);
+}
+
+/* track and slides */
+.logo-slider .slider-track {
+  display: flex;
+  height: 100%;
+  transition: transform .8s ease;
+  will-change: transform;
+}
+.logo-slider .slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* responsive: reduce size on small screens */
+@media (max-width: 600px) {
+  .logo-slider { width: 180px; height: 96px; }
+  .logo-image { height: 40px; }
+}
+
+@media (min-width: 1024px) {
+  .logo-slider { width: 300px; height: 140px; }
+}
+
+/*desktop layout*/
+
+@media (min-width: 768px){
+    .nav-tongle{display: none;}
+    .nav-links{
+        position: static;
+        display: block;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .nav-links ul{
+        flex-direction: row;
+        gap: 1.2rem;
+        align-items: center;
+    }
+    .navbar{
+        align-items: center;
+    }
+}
+
+.promo-track{
+    display: flex;
+    margin: 10px;
+    width: 50%%;
+}
+
+.p1{
+
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+    justify-content: space-around;
+
+}
+
+/* Each card */
+.four-card{           /* four equal columns */        /* prevents cards from getting too small */
+  background: #fff;        /* adjust to your theme (or use var(--bg) etc.) */
+  color: #111;
+  border-radius: 8px;
+  text-align: center;
+  
 }
